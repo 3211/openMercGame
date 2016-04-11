@@ -1,4 +1,7 @@
 package openEngine;
+
+import program.ProgramDriver;
+
 /**
  * A simple template for a functioning thread to call programDriver's ''update'' method.
  * 

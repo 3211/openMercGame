@@ -33,6 +33,7 @@ public class MainFrame extends JFrame {
 		setContentPane(contentPane);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
+		this.setBounds(0,0,250,250+getInsets().top);
 	}
 	/**
 	 * @return GraphicsDevice - access to the system's display devices
