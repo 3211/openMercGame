@@ -14,15 +14,17 @@ import resPkg.ResourceLoader;
  */
 public class ProgramDriver {
 	MainFrame frame;
-	
+	Image i;
 	public ProgramDriver(MainFrame frame){
 		this.frame = frame;
-		Image i = ResourceLoader.getImage("test.png");
+		i = ResourceLoader.getImage("test.png");
 		frame.setBounds(0,0,i.getWidth(null),i.getHeight(null));
 		frame.getCanvasGraphics().drawImage(i, 0, 0, null);
+		
 	}
 
 	public void update(){
-
+		frame.getCanvasGraphics().clearRect(0, 0, i.getWidth(null), i.getHeight(null));
+		frame.getCanvasGraphics().drawImage(i, 0, 0, null);	
 	}
 }
