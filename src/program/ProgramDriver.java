@@ -1,12 +1,9 @@
 package program;
 
 import java.awt.Image;
-import java.io.File;
-import java.io.IOException;
-
 import openEngine.MainFrame;
-import testClasses.ImageDisplay;
-import resPkg.ResourceLoader;
+import resPkg.FileLoader;
+import resPkg.ImageLoader;
 
 /**
  * @author A.Audette
@@ -17,14 +14,12 @@ public class ProgramDriver {
 	Image i;
 	public ProgramDriver(MainFrame frame){
 		this.frame = frame;
-		i = ResourceLoader.getImage("test.png");
+		i = ImageLoader.getImage("test.png");
 		frame.setBounds(0,0,i.getWidth(null),i.getHeight(null));
 		frame.getCanvasGraphics().drawImage(i, 0, 0, null);
-		
+		//TODO fix FileLoader:
+					//String[] test = FileLoader.getFile("testfile");
 	}
-
 	public void update(){
-		frame.getCanvasGraphics().clearRect(0, 0, i.getWidth(null), i.getHeight(null));
-		frame.getCanvasGraphics().drawImage(i, 0, 0, null);	
 	}
 }
