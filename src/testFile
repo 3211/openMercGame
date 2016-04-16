@@ -1,0 +1,89 @@
+NOID@testPlayer
+[name=player1,
+description=a player,
+
+stats=<
+	s0000@t
+	[name=hp,
+	description=a stat,
+	subStats=<
+		s0001@te
+		[name=strength,
+		description=a stat,
+		subStats=<
+		>,
+		iconPath=null]
+		
+		s0002@tes
+		[name=agility,
+		description=a stat,
+		subStats=<
+		>,
+		iconPath=null
+	>,iconPath=null]
+>,
+inventory=<
+	i0001@testObject
+	[name=test object1,
+	description=an object,
+	stats=<
+		s0004@testS
+		[name=willpower,
+		description=a stat,
+		subStats=<
+		>,iconPath=null]
+		
+		s0003@test
+		[name=stealth,
+		description=a stat,
+		subStats=<
+		>,
+		iconPath=null]
+	>,
+	components=<
+		i0002@testComponent
+		[name=test component,
+		description=a component,
+		stats=<
+			s0006@testStat
+			[name=focus,
+			description=a stat,
+			subStats=<
+			>,
+			iconPath=null]
+			
+			s0005@testSt
+			[name=stamina,
+			description=a stat,
+			subStats=<
+			>,
+			iconPath=null]
+		>,
+		components=<
+		>,
+		iconPath=null]
+	>,
+	iconPath=null]
+	
+	null@null
+	[name=null,
+	description=null,
+	stats=<
+	>,
+	components=<
+	>,
+	iconPath=null]
+>,
+iconPath=null]
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
